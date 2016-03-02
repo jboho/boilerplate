@@ -2,14 +2,14 @@
   "name": "boilerplate",
   "version": "0.0.1",
   "description": "boilerplate for react/redux apps",
-  "homepage": "",
+  "homepage": "https://github.com/jboho/boilerplate",
   "author": "various",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jboho/boilerplate"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/jboho/boilerplate/issues"
   },
   "scripts": {
     "build": "npm run clean && npm run lint && webpack",
