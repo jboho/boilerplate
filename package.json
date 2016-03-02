@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "boilerplate for react/redux apps",
   "homepage": "https://github.com/jboho/boilerplate",
+  "main": "app/index.js",
   "author": "various",
   "repository": {
     "type": "git",
