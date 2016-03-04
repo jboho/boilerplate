@@ -1,5 +1,5 @@
 import * as constants from '../constants'
-import createReducer from '../utils/create-reducer'
+import createReducer from './create-reducer'
 
 const initialState = {
   locale: 'en',

@@ -1,15 +1,17 @@
+import { hasStorage } from '../utils'
+
 export function put (key, value) {
-  window.localStorage.setItem(key, value)
+  hasStorage && window.localStorage.setItem(key, value)
 }
 
 export function get (key) {
-  return window.localStorage.getItem(key)
+  return hasStorage ? window.localStorage.getItem(key) : ''
 }
 
 export function remove (key) {
-  return window.localStorage.removeItem(key)
+  return hasStorage && window.localStorage.removeItem(key)
 }
 
 export function clear () {
-  window.localStorage.clear()
+  hasStorage && window.localStorage.clear()
 }

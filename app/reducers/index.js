@@ -3,10 +3,10 @@ import { routerStateReducer } from 'redux-router'
 import application from './application'
 import api from './api'
 
-const rootReducer = combineReducers({
+const reducers = combineReducers({
   application : application,
   api : api,
   router : routerStateReducer
 })
 
-export default rootReducer
+export default reducers

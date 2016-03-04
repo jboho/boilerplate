@@ -3,7 +3,7 @@ import '../assets/styles/'
 
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { configureStore } from './utils'
+import configureStore from './store'
 import renderRoutes from './routes'
 import initialState from './state'
 

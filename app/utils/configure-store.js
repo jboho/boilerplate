@@ -3,10 +3,13 @@ import { createStore, compose, applyMiddleware } from 'redux'
 import { reduxReactRouter } from 'redux-router'
 import createHistory from 'history/lib/createBrowserHistory'
 import thunk from 'redux-thunk'
-import logger from '../middleware/logger'
+// import logger from '../middleware/logger'
+import createLogger from 'redux-logger'
 import DevTools from '../components/util/DevTools'
 import persistenceStore from '../persistence/store'
 import reducers from '../reducers'
+
+const logger = createLogger()
 
 const middlewareBuilder = () => {
 
