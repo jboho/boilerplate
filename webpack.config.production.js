@@ -35,15 +35,9 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['', '.css', '.es6', '.es', '.js', '.jsx', '.less', '.sass', '.scss'],
+    extensions: ['', '.css', '.es', '.es6', '.js', '.jsx', '.less', '.sass', '.scss'],
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.css$/,
-        loader: "csslint"
-      },
-    ],
     loaders: [
       { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'app') },
       { test: /\.less$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!postcss-loader!less-loader') },

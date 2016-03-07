@@ -31,11 +31,11 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['', '.css', '.es6', '.es', '.js', '.jsx', '.less', '.sass', '.scss'],
+    extensions: ['', '.css', '.es', '.es6', '.js', '.jsx', '.less', '.sass', '.scss'],
   },
   module: {
     loaders: [
-      { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'app') },
+      { test: /\.js$/, loader: 'babel', include: path.join(__dirname, 'app') },
       { test: /\.less$/, loader: 'style-loader!css-loader!postcss-loader!less-loader' },
     ]
   },
